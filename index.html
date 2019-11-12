@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1226" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title>April Entry</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/alert.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 弹窗说明部分开始 -->
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>本站作者有话要说</h2>
+            </div>
+            <div class="modal-body">
+                <p style="color:red;">特别说明，点击输入框就会有相应的账号密码提示，您可根据提示登录</p>
+                <p>由于作者只是学生,经济有限，租不起好的服务器,所以加载有点慢,还望大人<span style="color:red;">耐心等待</span>。无奈心者何以成大事。</p><br>
+                <p>In particular, click on the input box to have the corresponding account password prompt, you can
+                log in according to the prompt</p>
+            </div>
+            <div class="modal-footer">
+                <h3><a href="tencent://message/?uin=452566060&Site=&Menu=yes">点我联系管理员</a></h3>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗说明的js -->
+    <script>
+        // 弹框id
+        var modal = document.getElementById("simpleModal");
+        // X 的类名
+        var closeBtn = document.getElementsByClassName("closeBtn")[0];
+        closeBtn.addEventListener("click", closeModal);
+        window.addEventListener("click", outsiteClick);
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        function outsiteClick(e) {
+            if (e.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+    <!-- 弹窗说明部分结束 -->
+    <canvas id="wind"></canvas>
+    <div id="header">
+        <div class="wrapper">
+            <div class="leftsidebar">
+                <ul class="list-logo">
+                    <li>April</li>
+                    <li class="logo-2">Story</li>
+                    <li class="logo-3"><b>|</b> &nbsp;&nbsp;&nbsp;小时不知剧中意,长大已是剧中人</li>
+                </ul>
+            </div>
+            <div class="rightsidebar">
+                <ul class="list_menu">
+                    <li style="color: #02b2b5;cursor:pointer;">登录</li>
+                    <li><a href="" title="请先登录">个人简历</a></li>
+                    <li><a href="" title="请先登录">个人作品</a></li>
+                    <li><a href="" title="请先登录">个人娱乐</a></li>
+                    <li><a href="" title="请先登录">人生轨迹</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="shop">
+        <form action="" class="loginbar">
+            <h2 class="title">Welcome April</h2>
+            <span class="titleSpan">姓名</span><br>
+            <input type="text" class="inbar" id="name"> &nbsp; <span class="sep" id="nameSpan"></span><br>
+            <span class="titleSpan">账号</span><br>
+            <input type="text" class="inbar" id="number"> &nbsp; <span class="sep" id="numberSpan"></span><br>
+            <span class="titleSpan">密码</span><br>
+            <input type="password" class="inbar" id="password"> &nbsp; <span class="sep" id="passwordSpan"></span><br>
+            <input type="submit" class=" login" value="登录" id="submit">
+            
+            <button class="loginbt"id="shortcut">一键登录</button>
+    
+        </form>
+    </div>
+</body>
+
+</html>

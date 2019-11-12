@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-15 16:11:39
+ * @version $Id$
+ */
+html,body {
+            margin:0px;
+            width:100%;
+            height:100%;
+            background:#000;
+            overflow:hidden;
+            position: relative;
+
+        }
+canvas{
+            position:absolute;
+            width:100%;
+            height:100%;
+        }
+ul{list-style:none;}
+a{text-decoration:none;}
+li{float:left;}
+#header{
+height:120px;
+background:rgba(0,0,0,0.7);
+position:relative;
+}
+.wrapper{
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.leftsidebar{
+    height:120px;
+    width:500px;
+    float:left;
+}
+.list-logo{
+    height:120px;
+    width:500px;
+    margin-top:30px;
+}
+.list-logo li{
+    height:44px;
+    margin-left:20px;
+    text-align:center;
+    line-height: 44px;
+}
+.list-logo li:first-child{
+    margin-left:0;
+    color: rgb(2, 178, 181);
+    font-weight:600;
+    font-size:32px;
+}
+.logo-2{
+    font-weight:600;
+    font-size:32px;
+    color:rgb(204,204,204);
+}
+.logo-3{
+    padding:10px 0 0;
+    font-size:14px;
+    color: rgb(155, 155, 155);
+}
+.rightsidebar{
+    height:120px;
+    width:500px;
+    float:right;
+}
+.list_menu{
+    line-height:114px;
+    font-weight:600;
+    margin-left:10px;
+}
+.list_menu li{
+    margin-left:35px;
+}
+.list_menu li:first-child{
+    margin-left:0;
+}
+.list_menu li:first-child a{
+    color: #02b2b5;
+}
+.list_menu li a{
+    color: rgb(155, 155, 155);
+}
+.list_menu li a:hover{
+    color: #02b2b5;
+    transition:color .5s;
+}
+/*登录样式*/
+.shop{
+    position: absolute;
+    left:35%;
+    top:22%;
+    width:420px;
+    height:500px;
+    background:rgba(0,0,0,0.6);
+    border-radius:20px;
+}
+.loginbar{
+    width:400px;
+    height:450px;
+    margin:25px 32px;
+    color:rgba(255,255,255,.7);
+    line-height:35px;
+}
+.title{
+    color: rgb(2, 178, 181);
+    text-align:center;
+}
+.titleSpan{
+    font-weight:600;
+}
+.inbar{
+    width:220px;
+    height:30px;
+    outline:none;
+    border-radius:10px;
+    padding-left:10px;
+    background:rgba(61,61,58,.8);
+    font-size:16px;
+    color:rgba(255,255,255,.8);
+    border:0;
+}
+.login{
+    width:80px;
+    height: 40px;
+    margin:110px 60px;
+    background:rgba(61,61,58,.8);
+    font-weight: 600;
+    border:0;
+    border-radius:10px;
+}
+.loginbt{
+    width:80px;
+    height: 40px;
+    background:rgba(61,61,58,.8);
+    font-weight: 600;
+    border-radius:10px;
+    border:0;
+}
+.login:hover{
+    color:rgba(61,61,58,.8);
+    background:rgba(255,255,255,.7);
+    transform:translateY(-2px);
+}
+.loginbt:hover{
+    color:rgba(61,61,58,.8);
+    background:rgba(255,255,255,.7);
+    transform:translateY(-2px);
+}
