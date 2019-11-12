@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-10 21:41:12
+ * @version $Id$
+ */
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a{text-decoration:none;}
+li{float:left;}
+#header{
+    height:120px;
+    background:#2f3e45;
+}
+.wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:1200px;
+    /*background:green;
+    height:10px;*/
+}
+.leftsidebar{
+    height:120px;
+    width:500px;
+    float:left;
+}
+.list-logo{
+    height:120px;
+    width:500px;
+    margin-top:30px;
+
+}
+.list-logo li{
+    height:44px;
+    margin-left:20px;
+    text-align:center;
+    line-height: 44px;
+}
+.list-logo li:first-child{
+    margin-left:0px;
+    color: rgb(2, 178, 181);
+    font-weight:600;
+    font-size:32px;
+}
+.logo-2{
+    font-weight:600;
+    font-size:32px;
+    color:rgb(204,204,204);
+}
+.logo-3{
+    padding:10px 0 0;
+    font-size:14px;
+    color: rgb(155, 155, 155);
+}
+.rightsidebar{
+    height:120px;
+    width:500px;
+    float:right;
+}
+.list_menu{
+    font-weight:600;
+    width: 500px;
+    height:60px;
+    line-height: 60px;
+    margin-top:30px;
+}
+.list_menu_li{
+    margin-left:40px;
+    width: 66px;
+    position:relative;
+    text-align:center;
+}
+.list_menu_li:first-child a{
+    color: #02b2b5;
+}
+.list_menu_li:first-child {
+    margin-left: 0;
+}
+.list_menu li a{
+    color: rgb(155, 155, 155);
+}
+.list_menu li a:hover{
+    color: #02b2b5;
+    transition:color .5s;
+}
+/*个人作品集样式*/
+.works{
+    position: absolute;
+    top:56px;
+    left:-13px;
+    width:100px;
+    background:#2f3e45;
+    border-radius:10px;
+    box-shadow:0px 1px 8px 2px #2f3e45;
+    display:none;
+}
+.works_list{
+    float:none;
+    height:30px;
+    line-height:30px;
+    font-size:15px;
+    margin-bottom:10px;
+
+}
+.works_ul:hover .works{
+    display:block;
+}
+.amu_ul:hover .works{
+    display:block;
+}
+/*导航栏结束*/
+/*轮播层开始*/
+#container{
+    height:500px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:500px;
+    width:100%;
+    z-index:-1;
+    display: none;
+}
+
+/*登录样式*/
+.shop{
+    position: absolute;
+    left:0;
+    top:25%;
+    width:420px;
+    height:500px;
+    background:rgba(255,255,255,0.6);
+    border-radius:20px;
+    display:none;
+}
+.loginbar{
+    width:346px;
+    height:450px;
+    margin:25px 32px;
+    color:#02B2B5;
+    line-height:35px;
+}
+.title{
+    
+    text-align:center;
+}
+.titleSpan{
+    font-weight:600;
+}
+.inbar{
+    width:220px;
+    height:30px;
+    outline:none;
+    border-radius:10px;
+    padding-left:5px;
+}
+.login{
+    width:80px;
+    height: 40px;
+    margin:110px 60px;
+    background:rgba(107,194,53,.7);
+    font-weight: 600;
+
+}
+.loginbt{
+    width:80px;
+    height: 40px;
+    background:rgba(107,194,53,.7);
+    font-weight: 600;
+    border-radius:10px;
+}
+.login:hover{
+    color: #068043;
+    background:#02B2B5;
+    transform:translateY(-2px);
+}
+.loginbt:hover{
+    color: #068043;
+    background:#02B2B5;
+    transform:translateY(-2px);
+}
+/*登录样式结束*/
+/*公告栏开始*/
+.jounus-list{
+    height: 60px;
+    margin-top:30px;
+    line-height: 60px;
+}
+.jounus-list li{
+    margin-left: 10px;
+}
+.jounus-list i{
+    font-size:26px;
+    
+}
+.jounus-list li:first-child{
+    margin-left:0;
+    color:#02B2B5;
+    font-weight:600;
+}
+.jounus-list li:first-child:hover{
+   transform:translate(-2px,-2px);
+}
+.jounus-last{
+    float:right;
+    width:240px;
+    background:#02B2B5;
+    color:#fff;
+}
+.jounus-last i{
+    margin-left:20px;
+}
+/*公告栏结束*/
+/*关于我样式*/
+#about{
+    margin-top:60px;
+}
+.aboutMe{
+    height:680px;
+    font-size:18px;
+    color:#b0b0b0;
+}
+.aboutMe-sp{
+    color: #02B2B5;
+
+}
+.aboutMe-left{
+    float:left;
+    width:550px;
+    color:#424242;
+}
+.aboutMe-left-jieshao{
+    width: 520px;
+    height: 520px;
+    margin-top:30px;
+    text-indent: 2em;
+    line-height:35px;
+    color:#A9A9A9;
+    font-size:16px;
+}
+.jieshao-list{
+    width:520px;
+    height: 100px;
+   
+    color:#02B2B5;
+    line-height: 100px;
+    font-weight:600;
+}
+.jieshao-list li {
+    margin-left:60px;
+    position: relative;
+}
+.jieshao-list li::before{
+    position: absolute;
+    top:33px;
+    left:120px;
+    width:1px;
+    height:40px;
+    content:"";
+    background: #e0e0e0;
+}
+.jieshao-list li:last-child::before{
+    display:none;
+}
+.jieshao-list li:first-child{
+    margin:0;
+}
+.jieshao-list li i{
+    font-size: 42px;
+}
+.jieshao-a{
+    padding:10px 20px;
+    background:#02B2B5;
+    color:#fff;
+}
+.aboutMe-right{
+    float:right;
+    width:600px;
+    margin-top:54px;
+    position: relative;
+}
+.aboutMe-right-1{
+    width:500px;
+    height: 300px;
+    background: pink;
+    position: absolute;
+    top:0;
+    left: 0;
+    box-shadow:-2px 37px 9px 2px  #424242;
+}
+.aboutMe-right-2{
+    width:500px;
+    height: 300px;
+    background: green;
+    position: absolute;
+    top:60px;
+    left:50px;
+    box-shadow:-2px 37px 9px 2px  #424242;
+}
+.aboutMe-right-3{
+    width:500px;
+    height: 300px;
+    background:yellow;
+    position: absolute;
+    top:120px;
+    left:100px;
+    box-shadow:-2px 37px 9px 2px  #424242;
+
+}
+#J_homeBanner{
+    margin-bottom:60px;
+}
+/*大学环境层开始*/
+#shool{
+    margin-top:120px;
+}
+.shool-top{
+    text-align:center;
+    height:250px;
+}
+.shool-top-sp1{
+    font-size:32px;
+    color:#02B2B5;
+    margin-right:20px;
+}
+.shool-top-sp2{
+    font-size:32px;
+
+}
+.shool-top-p{
+    margin:20px 0;
+    font-size:16px;
+    line-height: 80px;
+       
+}
+.shoolP{
+    font-size:12px;
+       color:#666;
+}
+.shool-bottom{
+    height: 680px;
+}
+.shool-bottom-left{
+    float:left;
+    width:888px;
+}
+.shool-list li{
+    width:286px;
+    height:300px;
+    margin:0 10px 10px 0;
+    overflow:hidden;
+}
+.shool-list li:first-child{
+    width:582px;
+    overflow:hidden;
+}
+.shool-list-first img:hover{
+    transform:translateX(-570px);
+    transition-duration:20s;
+}
+.shool-list-li img:hover{
+    transform:translateX(-5px);
+    transition:.5s;
+}
+.shool-bottom-right{
+    float:right;
+    height:610px;
+    width:300px;
+    overflow:hidden;
+}
+.shool-bottom-right img:hover{
+    transform:translateX(-5px);
+    transition:.5s;
+}
+/*大学环境层结束*/
+/*尾部开始*/
+#footer{
+    height:440px;
+    margin-top:60px;
+    background: url(../images/J_homeBanner.jpg);
+    background-size:100% 100%;
+    color:rgba(127,127,127);
+}
+.footerbg{
+    background:rgba(0,0,0,.9);
+}
+.footer-top{
+    border-bottom:1px solid #02B2B5;
+    height:260px
+}
+.footer-top-left{
+    float:left;
+    width:800px;
+    height: 100%;
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer-title{
+    font-size:21px;
+    color:#02B2B5;
+    margin:20px 0 30px 0;
+    display:block;
+}
+.footer-top-right{
+    float:right;
+    width:336px;
+    height: 100%;
+}
+.footer-table tr td{
+    height:40px;
+    font-size:18px;
+}
+.footer-table tr td i{
+    font-size:31px;
+}
+.footer-bottom{
+    padding-top:40px;
+    height:140px;
+    font-size:12px;
+}
+.footer-bottom a{
+    color:rgba(127,127,127);
+}
+.footer-bottom a:hover{
+    color:#02B2B5;
+}
